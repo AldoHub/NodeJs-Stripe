@@ -1,0 +1,18 @@
+extends layout
+block content
+    
+    section.itemContainer 
+        
+        div.itemData
+            p(class="amount") &#36; #{item.amount}
+            div
+                a(class="goback" href="/") Go Back
+                h2 Item: #{item.name}
+                p(style="margin-bottom:30px")=item.description
+                       
+                form( action='/charge', method='POST' )
+                    input(type="hidden" name="amount" value= `${item.amount}00`)
+                    script.stripe-button(src='https://checkout.stripe.com/checkout.js', data-key='pk_test_ZOH8AJt9JfKSALzPg3ESVbRT', data-amount=`${item.amount}00`, data-name=`${item.name}`, data-description=`${item.description}`, data-image='https://stripe.com/img/documentation/checkout/marketplace.png', data-locale='auto')
+
+        img(src=`${item.image}`)
+

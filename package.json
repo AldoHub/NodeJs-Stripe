@@ -1,0 +1,25 @@
+{
+  "name": "node-stripe",
+  "version": "1.0.0",
+  "description": "a simple app that uses stripe api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "stripe",
+    "api",
+    "stripe",
+    "api",
+    "payments",
+    "nodejs"
+  ],
+  "author": "aldocaava",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.3.4",
+    "pug": "^2.0.3",
+    "stripe": "^6.12.1"
+  }
+}

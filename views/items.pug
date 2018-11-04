@@ -1,0 +1,19 @@
+extends layout
+block content
+    header
+        div
+            h1 NodeJS Stripe Payment
+            p Stripe implementation using NodeJs / Stripe API / Pug
+        img(src="/assets/870.svg")
+    section
+        div.description
+            h2 Products
+            p Sed bibendum diam quis orci tincidunt, ac dictum dolor dignissim. Suspendisse porttitor, augue ac molestie tristique, lorem felis laoreet arcu, nec lacinia metus ex luctus purus. Integer facilisis diam a gravida fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non facilisis magna.
+            
+        div(class="itemsContainer")
+            each item in items
+                a(href=`/item/${item._id}`)
+                    div(class="box a" style=`background-image: url('${item.image}') `)
+                            h4=item.name
+                    
+            

@@ -1,0 +1,249 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    transition: all 500ms ease-in-out;
+}
+body { 
+    font-family: Krub;
+   color: #fff;
+   background: #000e38;
+  
+}
+  
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+header {
+    height: 700px;
+    position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
+    background: #00081f;
+}
+
+header div {
+    
+    padding-top: 100px;
+    padding-left: 20%;
+    width: 40%;
+    position: relative;
+    z-index: 10;
+}
+
+header div h1 {
+    font-size: 6rem;
+    line-height: 5.5rem;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 80%;
+    position: absolute;
+    top: -220px;
+    right: 5%;
+}
+main {
+  
+    margin-top: 0px;
+    color: #eee;
+}
+main section {
+    width: 60%;
+    margin: 0px auto;
+    padding-top: 0px;
+   
+
+}
+
+.itemsContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+   
+}
+.itemsContainer div h2 {
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+}
+
+.itemContainer a {
+    text-decoration: none;
+}
+.itemsContainer h4{
+    background: rgb(0, 108, 180);
+    width: 30%;
+    padding: 10px;
+   
+    color: #fff;
+}
+
+.itemContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    align-items: center;
+    margin-top: 100px;
+}
+.itemContainer img {
+    width: 80%;
+ 
+}
+.goback {
+    display: block;
+   color: #fff;
+   margin-top: 20px;
+margin-bottom: 40px;  
+}
+.itemData {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+#waves {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom:0;
+}
+.amount {
+    font-size: 6rem;
+}
+
+.box{
+    padding: 10px;
+    height: 300px;
+    background-size: 120%;
+    background-position: center;
+ 
+    -webkit-box-shadow: 0px 10px 17px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 17px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 17px -10px rgba(0,0,0,0.75);
+    
+}
+
+.box img {
+    width: 100%;
+}
+
+.stripe-button-el{
+    border: none !important;
+    padding: 0px !important;
+}
+
+.stripe-button-el span {
+    background: linear-gradient(to right, #673ab7, #512da8) !important;
+    font-family: Krub !important;
+    padding: 5px !important; 
+    font-size: 1.3rem !important;
+
+}
+.description {
+   
+    margin: 40px auto;
+
+}
+.thankyou {
+    
+    text-align: center;
+
+}
+.thankyou img{
+    width: 60%;
+}
+.thankyou h2 {
+    font-size: 3rem;
+}
+
+.thankyou span {
+    border-bottom: 1px solid #673ab7; 
+    display: block;
+    padding-bottom: 10px;
+}
+.cusSupport {
+    color: #673ab7;
+}
+
+@media (max-width:1630px) {
+
+    header {
+        height: 600px;
+     
+    }
+    header div h1 {
+        font-size: 4rem;
+        line-height: 4.2rem;
+       
+    }
+    
+    header img {
+        width: 90%;
+    }
+
+} 
+
+
+@media (max-width:1200px) {
+
+    header {
+        height: 400px;
+     
+    }
+    header div h1 {
+        font-size: 3rem;
+        line-height: 3.2rem;
+       
+    }
+    
+    header img {
+        width: 90%;
+    }
+
+} 
+
+
+@media (max-width:1000px) {
+
+    header {
+        height: 200px;
+     
+    }
+    header div h1 {
+        font-size: 3rem;
+        line-height: 3.2rem;
+       
+    }
+    
+    header img {
+        width: 100%;
+    }
+
+    header div {
+    
+        padding-top: 0px;
+      width: 70%;
+    }
+    
+} 
+
+
+@media (max-width:600px) {
+    header div h1 {
+        font-size: 2rem;
+        line-height: 2.2rem;
+       
+    }
+   
+    header img {
+        width: 170%;
+        opacity: 0.3;
+    }
+
+  
+    
+} 
